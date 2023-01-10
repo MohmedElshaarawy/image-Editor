@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(43, 43, 43);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}.container{
+  width: 78%;
+  height: 650px;
+  margin-top: 28px;
+    background-color: rgb(23, 23, 23);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   border-radius: 30px;
+}.img{
+    width: 40%;
+    
+    flex-direction: column;
+    text-align: center;
+}img{
+    margin-bottom: 20px;
+    border-radius: 2px;
+    max-width: 45vw;
+    max-height: 60vh;
+    background-size: cover;
+    
+}#title{
+    position: absolute;
+    top: 10px;
+    color: white;
+    font-size: 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}.filter{
+    width: 40%;
+    line-height:40px ;
+    direction: rtl;
+}p{
+    color: #fff;
+    font-family:Arial, Helvetica, sans-serif;
+}input[type="range"]{
+    width: 100%;
+}#btn{
+display: flex;
+justify-content: space-evenly;
+}#btn button{
+    width: 90px;
+    text-align: center;
+    height: 40px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    color: wheat;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}#btn button:hover{
+    background-color: rgb(29, 76, 29);
+}#HueRotate{
+    margin-bottom: 35px;
+}label{
+        color: wheat;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 2px dashed wheat;
+        padding: 7px 11px;
+        font-weight: bold;
+        cursor: pointer;
+}input[type="file"]{
+    display: none;
+}a{
+    text-decoration: none;
+    color: wheat;
+}
+
+@media (max-width:1000px){
+    #title{
+        display: none;
+    }
+.container{
+    display: flex;
+ flex-direction: column;
+ width: 85%;
+ min-height: 1000px;
+}img{
+    width: 100%;
+    margin-top: 20px; 
+   max-height:40vh;
+}.filter{
+    width: 85%;
+    line-height: auto;
+}#HueRotate{
+    margin-bottom: 10px;
+}#btn{
+    justify-content: space-around;
+    
+}
+}
